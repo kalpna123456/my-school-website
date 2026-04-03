@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nursery Class - G.B.P.S Suthar Colony</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <!-- 🔹 AOS Animation CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!-- 🔹 AOS Animation JS -->
+  <link rel="stylesheet" href="./nursery.css">
+</head>
+<body>
+  <header>
+    <div class="header">
+     <a href="index.html"><img src="./logo.png" alt="Logo" class="logo"></a>
+      <h1 data-aos="zoom-in">Government Boys Primary School Suthar Colony, Mithi</h1>
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </div>
+
+    <nav class="side-menu" id="sideMenu">
+      <a href="./index.html"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="./about.html"><i class="fa-solid fa-school"></i> About</a>
+      <a href="./gallery.html"><i class="fa-solid fa-image"></i> Gallery</a>
+      <a href="./contact.html"><i class="fa-solid fa-phone"></i> Contact</a>
+    </nav>
+  </header>
+
+  <section class="class-section">
+    <h2 data-aos="fade-down"><i class="fa-solid fa-child"></i> Second Class</h2>
+    <p data-aos="fade-down">Our second class section builds the foundation for learning with fun, creativity, and care.</p>
+
+    <div class="class-info">
+      <div class="teacher-card" data-aos="fade-right">
+        <img src="./sir nandlal.jpg" alt="Teacher">
+        <h3 data-aos="zoom-in">Sir Nandlal</h3>
+        <p><i class="fa-solid fa-chalkboard-user"></i> Class Teacher</p>
+      </div>
+
+      <div class="subject-list" data-aos="fade-left">
+        <h3><i class="fa-solid fa-book"></i> Subjects</h3>
+        <ul data-aos="fade-left">
+          <li>English Alphabets</li>
+          <li>Urdu Reading</li>
+          <li>Basic Math</li>
+          <li>Sindhi</li>
+          <!-- <li>Poems & Rhymes</li> -->
+        </ul>
+      </div>
+    </div>
+
+    <div class="gallery-mini">
+      <h3 data-aos="zoom-in">Class Activities</h3>
+      <div class="gallery-grid" data-aos="fade-up">
+        <img src="./class third img 1.jpg" alt="Activity 1">
+        <img src="./third img.jpg" alt="Activity 2">
+        <img src="./second class three.jpg" alt="Activity 3">
+        <img src="./sir nandlal 2.jpeg" alt="Activity 4">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer">
+      <div>
+     <a href="index.html#back-class"><button><i class="fa-solid fa-arrow-up"></i></button></a><br><br>
+     <a href="firstclass.html"><button><i class="fa-solid fa-arrow-left"></i></button></a>
+   </div>
+      <p>© 2025 Government Boys Primary School Suthar Colony, Mithi</p>
+        <div>
+     <a href="thirdclass.html"><button><i class="fa-solid fa-arrow-right"></i></button></a>
+   </div>
+    </div>
+  </footer>
+   
+  <script>
+    function toggleMenu() {
+    document.getElementById("sideMenu").classList.toggle("active");
+  }
+  </script>
+
+   </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      
+     <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    AOS.init({
+      duration: 1000,
+      once: false,   // scroll par dubara bhi animation chale
+    mirror: true   // scroll up par bhi animation
+    });
+  });
+</script>
+</body>
+</html>

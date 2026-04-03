@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - Suthar Colony School</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+   <!-- 🔹 AOS Animation CSS -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!-- 🔹 AOS Animation JS -->
+  <link rel="stylesheet" href="./gallery.css">
+  </head>
+<body>
+  <header>
+    <div class="header">
+   <a href="index.html"><img src="./logo.png" alt="Logo" class="logo"></a>
+      <h1>Government Boys Primary School Suthar Colony, Mithi</h1>
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </div>
+
+    <nav class="side-menu" id="sideMenu">
+      <a href="./index.html"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="./about.html"><i class="fa-solid fa-school"></i> About</a>
+      <a href="./gallery.html" class="active"><i class="fa-solid fa-image"></i> Gallery</a>
+      <a href="./contact.html"><i class="fa-solid fa-phone"></i> Contact</a>
+    </nav>
+  </header>
+
+  <section class="gallery-section" >
+    <div data-aos="zoom-in">
+    <h2>Our School Gallery</h2>
+    <p>Have a look at our memorable moments and activities.</p>
+    </div>
+
+    <div class="gallery-container" data-aos="zoom-in">
+      <div class="gallery-item">
+        <img src="./my school img 5.jpg" alt="Morning Assembly">
+        <div class="caption">Morning Assembly</div>
+      </div>
+      <div class="gallery-item">
+        <img src="./third img.jpg" alt="Classroom">
+        <div class="caption">Classroom Learning</div>
+      </div>
+      <div class="gallery-item">
+        <img src="./lab.jpg" alt="Science Lab">
+        <div class="caption">Science Lab</div>
+      </div>
+      <div class="gallery-item">
+        <img src="./play games.jpg" alt="Sports Day">
+        <div class="caption">Sports Day</div>
+      </div>
+      <div class="gallery-item">
+        <img src="./culture day 4.jpg" alt="Culture Day">
+        <div class="caption">Culture Day Celebration</div>
+      </div>
+      <div class="gallery-item">
+        <img src="./independent.jpg" alt="Independence Day">
+        <div class="caption">Independence Day Celebration</div>
+      </div>
+      <div class="gallery-item">
+        <img src="./teacher 1.jpg" alt="Independence Day">
+        <div class="caption">Teacher's Day Celebration</div>
+      </div>
+      <div class="gallery-item">
+        <img src="./children day 5.jpg" alt="Independence Day">
+        <div class="caption">student’s Day Celebration</div>
+      </div>
+    </div>
+
+
+    <div>
+      <h2>Videoes </h2>
+    </div>
+
+
+      <div class="container" data-aos="data-right">
+  <!-- Video List -->
+   <!-- <div class="video"> -->
+  <!-- <div class="video-list"> -->
+
+    <!-- <div class="video-item" onclick="playVideo('games video 1.mp4')">
+      <img src="./child play.jpg" alt="Video 1">
+      <p>Video 1</p>
+    </div> -->
+    <!-- <div class="video-item" onclick="playVideo('games video 2.mp4')">
+      <img src="./sir game.jpg" alt="Video 2">
+      <p>Video 1</p>
+    </div> -->
+    
+    <!-- <div class="video-item" onclick="playVideo('games video 4.mp4')">
+      <img src="./child games.jpg" alt="Video 3">
+      <p>Video 3</p>
+    </div> -->
+    <!-- <img src="./gallely video 1.mp4" alt="" class=""> -->
+    <!-- <div class="video-item" onclick="playVideo('gallery video 6.mp4')">
+      <img src="./teacher activite.jpg" alt="Video 3">
+      <p>Video 4</p>
+    </div> -->
+  
+    <!-- <div class="video-item" onclick="playVideo('gallery video 2.mp4')">
+      <img src="./culture day 3.jpg" alt="Video 3">
+      <p>Video 5</p>
+    </div> -->
+    <!-- <div class="video-item" onclick="playVideo('gallery video 3.mp4')">
+      <img src="./my principle.jpg" alt="Video 3">
+      <p>Video 2</p>
+    </div>
+    <div class="video-item" onclick="playVideo('gallery video 4.mp4')">
+      <img src="./child activites.jpg" alt="Video 3">
+      <p>Video 3</p>
+    </div>
+    <div class="video-item" onclick="playVideo('gallery video 5.mp4')">
+      <img src="./roza.jpg" alt="Video 3">
+      <p>Video 4</p>
+    </div> -->
+  
+ 
+  <!-- </div> -->
+  
+  <!-- Main Video Player -->
+  <div class="main-video" data-aos="data-left">
+    <video id="mainVideo" width="600" controls>
+      <source src="games video 2.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+  </section>
+  
+   
+    <script>
+function playVideo(videoSrc) {
+  let video = document.getElementById("mainVideo");
+  video.src = videoSrc;
+  video.play();
+}
+</script>
+
+
+   <footer>
+        <div class="footer">
+          <div class="footer-part">
+           <a href="./index.html"><img src="./logo.png" alt="" class="logo"></a>
+            <h2>Suthar Colony School</h2>
+        </div>
+          <div class="footer-home" data-aos="fade-up">
+            <a href="./index.html"><h2><span>Home</span></h2></a>
+            <a href="./index.html"> <p>Home</p></a>
+           <a href="./about.html"> <p>About</p></a>
+          <a href="./gallery.html"><p>Gallery</p></a>
+           <a href="./contact.html"> <p>Content</p></a>
+          </div>
+
+          <div class="footer-section" data-aos="fade-up">
+           <a href="#"> <h2><span>Section</span></h2></a>
+            <a href="./nursery.html"><p>Class Nursery</p></a>
+            <a href="firstclass.html"><p>Class First</p></a>
+            <a href="secondclass.html"><p>Claas Second</p></a>
+             <a href="thirdclass.html"><p>Claas Third</p></a>
+            <a href="forthclass.html"><p>Class Forth</p></a>
+            <a href="five.html"><p>Class Fifth</p></a>
+          </div>
+
+          <div class="footer-news" data-aos="fade-up">
+            <a href="#"><h2><span>Latest News</span></h2></a>
+            <a href="./children.html"><p>Children's Day</p></a>
+            <a href="./culture.html"><p>Culture Day</p></a>
+            <a href="festivals.html"><p>Festivals</p></a>
+            <a href="science.html"><p>Science Lab</p></a>
+            <a href="./games.html"><p>Games</p></a>
+            <a href="./independent.html"><p>Independent Day</p></a>
+          </div>
+        </div>
+  </footer>
+
+  <script>
+   function toggleMenu() {
+    document.getElementById("sideMenu").classList.toggle("active");
+  }
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      
+     <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    AOS.init({
+      duration: 1000,
+      once: false,   // scroll par dubara bhi animation chale
+    mirror: true   // scroll up par bhi animation
+    });
+  });
+</script>
+</body>
+</html>

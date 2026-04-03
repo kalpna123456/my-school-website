@@ -1,0 +1,305 @@
+body {
+      font-family: "Poppins", sans-serif;
+      background-color: #f4f7fa;
+      margin: 0;
+      padding: 0;overflow-x: hidden;
+    }
+    * {
+  box-sizing: border-box;
+}
+    body p{
+      font-family: 'Times New Roman';font-size: 18px;
+    }
+
+    header {
+      background: linear-gradient(90deg, #003366, #0055aa);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      
+    }
+
+    header h1 {
+      font-size: 45px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 20px;
+      opacity: 0.9;
+    }
+    /* 🔹 Menu Icon */
+.menu-icon {
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  z-index: 1001;
+}
+
+/* 🔹 Side Menu Hidden by Default */
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -250px; /* hidden position */
+  width: 250px;
+  height: 100%;
+  background-color: #003366; /* school blue color */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-top: 80px;
+  transition: right 0.4s ease; /* smooth slide */
+  z-index: 1000;
+}
+
+
+
+/* 🔹 When Menu Active */
+.side-menu.active {
+  right: 0;
+}
+
+/* 🔹 Links inside menu */
+.side-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 15px 20px;
+  width: 100%;
+  transition: background 0.3s;
+}
+
+.side-menu a:hover {
+  background-color: #0059b3;
+}
+
+/* 🔹 Optional backdrop when menu open */
+body.menu-open::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  z-index: 999;
+  transition: opacity 0.4s ease;
+}
+
+    /* ========== TEACHERS SECTION ========== */
+    .teachers-section {
+      text-align: center;
+      padding: 50px 0;
+    }
+
+    .teachers-section h2 {
+      font-size: 35px;
+      color: #003366;
+      margin-bottom: 40px;
+      position: relative;
+    }
+
+    .teacher-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 0 30px;
+    }
+
+    .teacher-card {
+      background: white;
+      width: 280px;
+      border-radius: 20px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .teacher-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .teacher-card img {
+      width: 100%;
+      /* height: 250px; */
+        height: auto;
+  aspect-ratio: 3/4; /* ya 1/1 agar square chahiye */
+      object-fit: cover;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+
+    .teacher-card h3 {
+      margin: 15px 0 5px;
+      color: #003366;
+    }
+
+    .teacher-card p {
+      color: #444;
+      font-size: 16px;
+      padding-bottom: 20px;
+    }
+
+    /* ========== VISITORS SECTION ========== */
+    .visitors-section {
+      background-color: #eaf2ff;
+      padding: 60px 20px;
+      text-align: center;
+      
+    }
+
+    .visitors-section h2 {
+      color: #003366;
+      font-size: 35px;
+      margin-bottom: 20px;
+    }
+
+    .visitor {
+      display: inline-block;
+
+      /* /* display: flex; */
+      /* flex-wrap: wrap;justify-content: center;  */
+      margin: 20px;
+      background: white;
+      border-radius: 20px;
+      padding: 20px;
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+      width: 350px;
+      transition: transform 0.3s ease;
+    }
+
+    .visitor:hover {
+      transform: translateY(-8px);
+    }
+
+    .visitor img {
+      width: 100%;
+      height: 250px;
+      border-radius: 15px;
+    }
+
+    /* ========== FUNCTIONS SECTION ========== */
+    .functions-section {
+      padding: 70px 20px;
+      text-align: center;
+      background-color: #fff;
+     
+      justify-content: center;
+    }
+
+    .functions-section h2 {
+      color: #003366;
+      font-size: 35px;
+      margin-bottom: 30px;
+    }
+
+    .function-gallery {
+      /* display: grid; */
+       display: flex;flex-wrap: wrap;justify-content: center;align-items: center;
+
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      padding: 0 30px;
+    }
+
+    .function-gallery img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 15px;
+      transition: transform 0.3s;
+    }
+     /* .function-gallery img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+} */
+
+    .function-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 30px;
+      font-size: 16px;
+      display: flex;justify-content: space-between;align-items: center;
+    }
+    footer p{
+      font-size: 18px;
+    }
+    footer button{
+  padding: 10px 15px;border: none;border-radius: 50%;background-color: white;color:#0059b3;font-size: 40px;
+}
+footer button:hover{
+  transform: scale(1.09);
+}
+
+    /* ================= MOBILE (max-width: 768px) ================= */
+@media (max-width: 768px) {
+
+  header {
+    padding: 30px 15px;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  header p {
+    font-size: 16px;
+  }
+
+  .menu-icon {
+    font-size: 26px;
+    top: 15px;
+    right: 20px;
+  }
+
+  /* Teachers */
+  .teacher-cards {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+  }
+   .teacher-card img {
+    aspect-ratio: 1/1; /* mobile me square achha lagta hai */
+  }
+
+  .teacher-card {
+    width: 90%;
+    
+  }
+
+  /* Visitors */
+  .visitor {
+    width: 90%;
+    
+  }
+
+  /* Functions gallery */
+  .function-gallery {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  .function-gallery img {
+    width: 300px;
+    height: 320px;
+  }
+ footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+

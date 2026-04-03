@@ -1,0 +1,289 @@
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:Arial, sans-serif;
+  overflow-x:hidden;
+}
+
+/* HEADER */
+.head{
+  position:relative;
+}
+
+/* Header Background Image */
+.head img{
+  width:100%;
+  height:450px; /* desktop */
+  object-fit:cover;
+}
+
+/* Overlay */
+.overlay{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.4);
+  
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  gap:10px;
+}
+
+/* Overlay Text */
+.overlay h2{
+  color:white;
+  font-size:24px;
+  margin-top:10px;
+}
+
+/* LOGO FIX */
+.overlay .logo{
+  height:60px;       /* desktop height */
+  width:auto;        /* maintain aspect ratio */
+  object-fit:contain;
+}
+
+/* BOTTOM TEXT */
+.over-second{
+  position:absolute;
+  bottom:20px;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  padding:0 20px;
+}
+
+.transform h1 span,
+.transform h2{
+  color:white;
+}
+
+/* SECTION */
+.sec-class{
+  text-align:center;
+  padding:30px;
+}
+
+/* BUTTON */
+.learn-btn{
+  background:#4CAF50;
+  color:white;
+  padding:8px 15px;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+  margin-top:10px;
+}
+
+.learn-btn:hover{
+  background:#45a049;
+}
+
+/* IMAGE GRID */
+.sec-children{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:15px;
+  padding:20px;
+  max-width:900px;
+  margin:auto;
+}
+
+.sec-children img{
+  width:100%;
+  height:280px;
+  object-fit:cover;
+  border-radius:12px;
+}
+
+/* VIDEO */
+.video{
+  text-align:center;
+}
+
+video{
+  width:90%;
+  max-width:500px;
+  border-radius:15px;
+}
+
+/* FOOTER */
+.footer{
+  background-color:#003366;
+  overflow:auto;
+  display:flex;
+  justify-content:space-evenly;
+  align-items:center;
+  padding:60px 20px;
+}
+
+.footer-part h2, 
+.footer-home a, 
+.footer-section a, 
+.footer-news a{
+  color:white;
+  text-decoration:none;
+  margin:10px;
+}
+
+.footer-home a:hover,
+.footer-section a:hover,
+.footer-news a:hover{
+  color:yellow;
+}
+
+.science-lab {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 35px 30px;
+    background: linear-gradient(145deg, #f0f4ff, #ffffff);
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    border-left: 5px solid #002b80; /* accent left border */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* HOVER EFFECT ON CARD */
+.science-lab:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+}
+
+/* TITLE */
+.science-lab h1 {
+    font-size: 30px;
+    color: #002b80;
+    text-align: center;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* SUBHEADINGS */
+.science-lab h2,
+.science-lab h3 {
+    color: #003366;
+    margin: 20px 0 12px 0;
+    position: relative;
+}
+
+/* ADD UNDERLINE DECORATION */
+.science-lab h2::after,
+.science-lab h3::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #4CAF50; /* highlight color */
+    margin-top: 5px;
+    border-radius: 2px;
+}
+
+/* PARAGRAPHS */
+.science-lab p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* LIST */
+.science-lab ul {
+    padding-left: 25px;
+    margin-top: 15px;
+}
+
+.science-lab ul li {
+    margin-bottom: 10px;
+    list-style-type: disc;
+    font-size: 16px;
+    color: #222;
+    transition: color 0.3s;
+}
+
+/* LIST ITEM HOVER EFFECT */
+.science-lab ul li:hover {
+    color: #4CAF50;
+}
+
+/* 📱 MOBILE FIX */
+@media(max-width:768px){
+   .science-lab {
+        padding: 25px 20px;
+        margin: 20px auto;
+    }
+    .science-lab h1 {
+        font-size: 24px;
+    }
+    .science-lab h2 {
+        font-size: 20px;
+    }
+    .science-lab h3 {
+        font-size: 18px;
+    }
+    .science-lab p,
+    .science-lab ul li {
+        font-size: 15px;
+    }
+
+  /* Header Image smaller */
+  .head img{
+    height:250px;
+  }
+
+  /* Overlay Text smaller */
+  .overlay h2{
+    font-size:16px;
+  }
+
+  /* Logo smaller */
+  .overlay .logo{
+    height:40px;
+  }
+
+  /* Hide left text */
+  .transform:first-child{
+    display:none;
+  }
+
+  /* Stack bottom text */
+  .over-second{
+    flex-direction:column;
+    align-items:center;
+    gap:5px;
+  }
+
+  /* Footer stack */
+  .footer{
+    flex-direction:column;
+    gap:20px;
+  }
+
+    .overlay .logo{
+    height:40px;
+  }
+
+
+/* FOOTER LOGO */
+.footer .logo{
+  height:40px;   /* desktop me chota footer logo */
+  width:auto;
+  object-fit:contain;
+}
+
+
+  .footer .logo{
+    height:30px;  /* mobile footer logo */
+  }
+}

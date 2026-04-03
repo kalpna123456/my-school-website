@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+<header>
+  <div class="header" data-aos="zoom-up">
+    <a href="./index.html">
+      <img src="./logo.png" alt="School Logo" class="logo">
+    </a>
+
+    <h1>Government Boys Primary School Suthar Colony, Mithi</h1>
+
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </div>
+
+  <nav class="side-menu" id="sideMenu">
+    <a href="./index.html"><i class="fa-solid fa-house"></i> Home</a>
+    <a href="./about.html"><i class="fa-solid fa-school"></i> About</a>
+    <a href="./gallery.html"><i class="fa-solid fa-image"></i> Gallery</a>
+    <a href="./contact.html"><i class="fa-solid fa-phone"></i> Contact</a>
+  </nav>
+</header>
+
+<section>
+  <h1 data-aos="fade-up">Contact Us</h1>
+
+  <div class="section">
+
+    <!-- Info -->
+    <div class="info" data-aos="fade-right">
+      <p><strong>School Name:</strong> Government Boys Primary School Suthar Colony, Mithi</p>
+      <p><strong>Phone:</strong> 0345-2597010</p>
+      <p><strong>Email:</strong> info@gpssutharcolony.com</p>
+      <p><strong>Office Timing:</strong> 8:00 AM – 2:00 PM</p>
+    </div>
+
+    <!-- Map -->
+    <div class="map" data-aos="fade-left">
+      <h2>Location</h2>
+      <iframe
+        src="https://www.google.com/maps?q=Suthar%20Colony,Mithi,Pakistan&output=embed"
+        loading="lazy">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+        <div class="footer" data-aos="fade-up">
+          <div class="footer-part" data-aos="fade-right">
+           <a href="./index.html"><img src="./logo.png" alt="" class="logo"></a>
+            <h2>Suthar Colony School</h2>
+        </div>
+          <div class="footer-home" data-aos="fade-up">
+            <a href="./index.html"><h2><span>Home</span></h2></a>
+           <a href="./about.html"> <p>Home</p></a>
+          <a href="./gallery.html"><p>About</p></a>
+           <a href="./gallery.html"> <p>Gallery</p></a>
+           <a href="./contact.html"> <p>Content</p></a>
+        
+
+          </div>
+
+          <div class="footer-section" data-aos="fade-up">
+           <a href="#"> <h2><span>Section</span></h2></a>
+            <a href="./nursery.html"><p>Class Nursery</p></a>
+            <a href="./firstclass.html"><p>Class First</p></a>
+            <a href="./secondclass.html"><p>Claas Second</p></a>
+             <a href="./thirdclass.html"><p>Claas Third</p></a>
+            <a href="./forthclass.html"><p>Class Forth</p></a>
+            <a href="./five.html"><p>Class Fifth</p></a>
+          </div>
+
+          <div class="footer-news" data-aos="fade-up">
+            <a href="./learnmore.html"><h2><span>Latest News</span></h2></a>
+            <a href="./children.html"><p>Children's Day</p></a>
+            <a href="./culture.html"><p>Culture Day</p></a>
+            <a href="festivals.html"><p>Festivals</p></a>
+            <a href="./science.html"><p>Science Lab</p></a>
+            <a href="./games.html"><p>Games</p></a>
+            <a href="./independent.html"><p>Independent Day</p></a>
+          </div>
+        </div>
+      </footer>
+
+<!-- Scripts -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+function toggleMenu() {
+  document.getElementById("sideMenu").classList.toggle("active");
+  document.body.classList.toggle("menu-open");
+}
+
+AOS.init({
+  duration: 1000,
+  once: false,
+  mirror: true
+});
+</script>
+
+</body>
+</html>
